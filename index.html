@@ -10,6 +10,10 @@
 
     <title>IRTRA Petapa | Sistema de Control de Aforo y Seguridad</title>
 
+    <!-- Ícono de la pestaña del navegador (favicon) -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23030914'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%2358e4ff' stroke-width='4'/%3E%3Cpath d='M22 42V22h6l10 13V22h6v20h-6L28 29v13z' fill='%23ffffff'/%3E%3C/svg%3E">
+
     <style>
 
         /* ==============================
@@ -1232,6 +1236,60 @@
 
             rgba(255,255,255,0.15);
 
+        overflow:hidden;
+
+            position:relative;
+
+            box-shadow:0 12px 35px rgba(0,0,0,0.25);
+
+        }
+
+
+        .avatar img{
+
+            width:100%;
+
+            height:100%;
+
+            object-fit:cover;
+
+            border-radius:50%;
+
+            display:block;
+
+        }
+
+
+        .avatar-fallback{
+
+            width:100%;
+
+            height:100%;
+
+            display:none;
+
+            align-items:center;
+
+            justify-content:center;
+
+            color:#58e4ff;
+
+            font-size:1.5rem;
+
+            font-weight:bold;
+
+            background:
+
+            linear-gradient(
+
+                135deg,
+
+                rgba(88,228,255,0.15),
+
+                rgba(173,140,255,0.15)
+
+            );
+
         }
 
 
@@ -1382,7 +1440,7 @@
 
     <div class="logo">
 
-        IRTRA PETAPA
+        NEXORA
 
     </div>
 
@@ -1475,7 +1533,7 @@
                 <!-- CAMBIAR LINK POR EL REPOSITORIO REAL -->
 
                 <a
-                    href="https://github.com/"
+                    href="https://github.com/describa1/Proyecto-Final-Nexora"
                     target="_blank"
                     class="btn btn-secondary">
 
@@ -2032,9 +2090,9 @@ exclusivamente código en lenguaje C++.
             <!-- ====================================
                  VIDEO
 
-                 Sube tu video a:
+                 Archivo del video en el repositorio:
 
-                 recursos/video/demostracion.mp4
+                 Video del circuito.mp4
             ===================================== -->
 
 
@@ -2064,7 +2122,7 @@ exclusivamente código en lenguaje C++.
 
                     <source
 
-                        src="recursos/video/demostracion.mp4"
+                        src="Video%20del%20circuito.mp4"
 
                         type="video/mp4">
 
@@ -2139,174 +2197,6 @@ exclusivamente código en lenguaje C++.
 
 
 <!-- =========================================
-     RECURSOS
-========================================= -->
-
-<section>
-
-    <div class="container">
-
-
-        <div class="section-small">
-
-            06 · RECURSOS
-
-        </div>
-
-
-        <h2 class="section-title">
-
-            Archivos del proyecto.
-
-        </h2>
-
-
-
-        <!-- PDF -->
-
-        <a
-
-            class="resource"
-
-            href="Proyecto_IRTRA_Petapa.pdf"
-
-            target="_blank">
-
-
-            <div>
-
-                <strong>
-
-                    📄 Investigación Formal
-
-                </strong>
-
-
-                <p style="
-                    color:#a9b8cd;
-                    margin-top:5px;
-                ">
-
-                    Investigación formal del sistema de control de aforo y seguridad
-
-                </p>
-
-            </div>
-
-
-            <span>
-
-                Abrir ↗
-
-            </span>
-
-
-        </a>
-
-
-
-        <!-- ==================================
-             TINKERCAD
-
-             CAMBIAR # POR EL LINK
-        =================================== -->
-
-
-        <a
-
-            class="resource"
-
-            href="#"
-
-            target="_blank">
-
-
-            <div>
-
-                <strong>
-
-                    🔌 Circuito en Tinkercad
-
-                </strong>
-
-
-                <p style="
-                    color:#a9b8cd;
-                    margin-top:5px;
-                ">
-
-                    Circuito del sistema simulado en Tinkercad Circuits
-
-                </p>
-
-            </div>
-
-
-            <span>
-
-                Abrir ↗
-
-            </span>
-
-
-        </a>
-
-
-
-        <!-- ==================================
-             GITHUB
-
-             CAMBIAR LINK
-        =================================== -->
-
-
-        <a
-
-            class="resource"
-
-            href="https://github.com/"
-
-            target="_blank">
-
-
-            <div>
-
-                <strong>
-
-                    &lt;/&gt; Repositorio GitHub
-
-                </strong>
-
-
-                <p style="
-                    color:#a9b8cd;
-                    margin-top:5px;
-                ">
-
-                    Código en C++ y recursos utilizados en el proyecto
-
-                </p>
-
-            </div>
-
-
-            <span>
-
-                Abrir ↗
-
-            </span>
-
-
-        </a>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================
      EQUIPO
 ========================================= -->
 
@@ -2317,7 +2207,7 @@ exclusivamente código en lenguaje C++.
 
         <div class="section-small">
 
-            07 · EQUIPO
+            06 · EQUIPO
 
         </div>
 
@@ -2347,7 +2237,12 @@ exclusivamente código en lenguaje C++.
 
                 <div class="avatar">
 
-                    01
+                    <img
+                        src="avatar-luis.png"
+                        alt="Avatar de Luis Enrique Castillo Dardón"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                    <span class="avatar-fallback">LC</span>
 
                 </div>
 
@@ -2377,7 +2272,12 @@ exclusivamente código en lenguaje C++.
 
                 <div class="avatar">
 
-                    02
+                    <img
+                        src="avatar-mario.png"
+                        alt="Avatar de Mario Andrés Flores Vidal"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                    <span class="avatar-fallback">MF</span>
 
                 </div>
 
@@ -2407,7 +2307,12 @@ exclusivamente código en lenguaje C++.
 
                 <div class="avatar">
 
-                    03
+                    <img
+                        src="avatar-diego.png"
+                        alt="Avatar de Diego Armando Escribá Vásquez"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                    <span class="avatar-fallback">DE</span>
 
                 </div>
 
