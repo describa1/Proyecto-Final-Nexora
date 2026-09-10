@@ -8,7 +8,7 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
 
-    <title>NEXORA | Proyecto Final Tecnología</title>
+    <title>IRTRA Petapa | Sistema de Control de Aforo y Seguridad</title>
 
     <style>
 
@@ -1382,7 +1382,7 @@
 
     <div class="logo">
 
-        NEXORA
+        IRTRA PETAPA
 
     </div>
 
@@ -1452,12 +1452,11 @@
 
             <p>
 
-                <strong>NEXORA</strong>
+                <strong>Sistema de Control de Aforo y Seguridad</strong>
 
-                es una propuesta de automatización
-                desarrollada para solucionar una problemática
-                dentro de IRTRA Petapa mediante Arduino,
-                sensores y programación en C++.
+                es una propuesta de automatización desarrollada para IRTRA Petapa,
+                basada en Arduino, sensores y programación en C++, para monitorear
+                el nivel de ocupación de una fila de espera y detectar accesos no autorizados.
 
             </p>
 
@@ -1495,7 +1494,7 @@
 
             <div class="status">
 
-                ● SISTEMA FUNCIONAL
+                ● SISTEMA DE MONITOREO
 
             </div>
 
@@ -1538,7 +1537,7 @@
 
         <h2 class="section-title">
 
-            Una necesidad real.
+            Una problemática real.
             Una solución tecnológica.
 
         </h2>
@@ -1546,9 +1545,9 @@
 
         <p class="section-description">
 
-            Nuestro proyecto busca identificar una problemática
-            dentro de IRTRA Petapa y solucionarla mediante
-            un sistema electrónico autónomo diseñado con Arduino.
+            Nuestro proyecto propone un sistema electrónico autónomo basado en Arduino Uno,
+            diseñado para monitorear el nivel de ocupación de una fila de espera y detectar
+            accesos no autorizados en zonas restringidas de IRTRA Petapa.
 
         </p>
 
@@ -1575,13 +1574,14 @@
 
                 <p>
 
-                    Escribe aquí la problemática que identificaron
-                    dentro del IRTRA Petapa.
-
-                    Puede ser un problema operacional,
-                    de seguridad, energético o relacionado
-                    con la experiencia de los visitantes.
-
+                 El parque de atracciones IRTRA Petapa recibe grandes volúmenes de visitantes durante temporada alta,
+especialmente fines de semana y vacaciones escolares. En este contexto, las filas de espera para las
+atracciones más populares tienden a saturarse sin que el personal de operaciones lo detecte a tiempo, lo
+cual incrementa el riesgo de aglomeraciones, incomodidad de los visitantes y, en casos extremos,
+condiciones inseguras cerca de los mecanismos de las atracciones. Adicionalmente, ciertas zonas de las
+filas y áreas restringidas carecen de vigilancia constante durante horarios de bajo tráfico o cierre parcial,
+lo que abre la posibilidad de que personas ingresen a espacios no autorizados sin ser detectadas
+(Boylestad & Nashelsky, 2013).
                 </p>
 
             </div>
@@ -1606,10 +1606,13 @@
 
                 <p>
 
-                    Explica aquí cómo funciona el circuito
-                    que diseñaron y de qué manera permite
-                    solucionar la problemática identificada.
-
+                    El sistema propuesto integra un microcontrolador Arduino Uno R3, un sensor ultrasónico HC-SR04 para
+medir la proximidad de las personas al límite de la fila de espera, un sensor PIR para detectar movimiento
+en zonas restringidas fuera de horario, un LED RGB que funciona como semáforo visual del estado del
+sistema, un buzzer que emite una alerta sonora ante condiciones críticas, y un push button que permite
+al personal del parque desactivar manualmente una alerta activa una vez atendida. Todo el sistema fue
+diseñado, conectado y programado en el entorno de simulación Tinkercad Circuits, utilizando
+exclusivamente código en lenguaje C++.
                 </p>
 
             </div>
@@ -1649,9 +1652,8 @@
 
         <p class="section-description">
 
-            El sistema procesa información del entorno
-            y responde automáticamente dependiendo
-            de las condiciones programadas.
+            El sistema mide continuamente la distancia y detecta movimiento. Según las condiciones
+            programadas, Arduino determina el estado de la fila o activa una alerta de seguridad.
 
         </p>
 
@@ -1678,8 +1680,7 @@
 
                 <p>
 
-                    Los sensores obtienen información
-                    del entorno.
+                    El sensor ultrasónico mide la distancia y el sensor PIR detecta movimiento.
 
                 </p>
 
@@ -1705,9 +1706,7 @@
 
                 <p>
 
-                    Arduino recibe la señal
-                    y ejecuta el código programado
-                    en C++.
+                    Arduino Uno R3 procesa las señales recibidas y ejecuta la lógica programada en C++.
 
                 </p>
 
@@ -1733,8 +1732,7 @@
 
                 <p>
 
-                    Dependiendo de los datos recibidos,
-                    se activa el componente correspondiente.
+                    El LED RGB indica el estado de la fila y el buzzer se activa cuando existe una alerta.
 
                 </p>
 
@@ -1760,8 +1758,7 @@
 
                 <p>
 
-                    El sistema permite automatizar
-                    y solucionar la problemática.
+                    El sistema permite monitorear el aforo y detectar movimientos no autorizados de forma autónoma.
 
                 </p>
 
@@ -1820,22 +1817,18 @@
                 <h2>
 
                     ODS seleccionado:
-                    [NÚMERO Y NOMBRE]
+                    ODS 11: Ciudades y Comunidades Sostenibles
 
                 </h2>
 
 
                 <p>
 
-                    Explica aquí cuál es el Objetivo de
-                    Desarrollo Sostenible relacionado
-                    con el proyecto.
-
-                    También debes explicar de qué manera
-                    la solución contribuye a mejorar
-                    la eficiencia, seguridad,
-                    sostenibilidad o uso responsable
-                    de recursos dentro del IRTRA Petapa.
+                    El ODS 11 busca lograr que las ciudades y los asentamientos humanos sean inclusivos,
+                    seguros, resilientes y sostenibles. Nuestro sistema contribuye a este objetivo
+                    al automatizar la gestión de la seguridad en espacios de alta afluencia de público
+                    dentro de IRTRA Petapa, ayudando a reducir los riesgos asociados a la sobreocupación
+                    de las filas de espera.
 
                 </p>
 
@@ -1875,10 +1868,8 @@
 
         <p class="section-description">
 
-            En esta sección se presentan evidencias
-            del desarrollo del proyecto,
-            la simulación en Tinkercad,
-            la infografía y las pruebas realizadas.
+            En esta sección se presentan evidencias del desarrollo del proyecto, incluyendo
+            el circuito armado en Tinkercad, la infografía, el proceso de trabajo y las pruebas realizadas.
 
         </p>
 
@@ -2048,9 +2039,7 @@
 
         <p class="section-description">
 
-            Consulta la investigación completa
-            y la demostración audiovisual
-            del proyecto.
+            Consulta la investigación formal y la demostración audiovisual del sistema desarrollado.
 
         </p>
 
@@ -2178,10 +2167,8 @@
                 line-height:1.7;
             ">
 
-                En este podcast explicamos
-                la problemática identificada,
-                el funcionamiento del circuito
-                y el impacto de nuestra solución.
+                En este podcast explicamos la problemática identificada en IRTRA Petapa,
+                el funcionamiento del circuito y los beneficios esperados de la solución.
 
             </p>
 
@@ -2260,7 +2247,7 @@
                     margin-top:5px;
                 ">
 
-                    Documento completo del proyecto
+                    Investigación formal del sistema de control de aforo y seguridad
 
                 </p>
 
@@ -2308,7 +2295,7 @@
                     margin-top:5px;
                 ">
 
-                    Simulación electrónica
+                    Circuito del sistema simulado en Tinkercad Circuits
 
                 </p>
 
@@ -2356,7 +2343,7 @@
                     margin-top:5px;
                 ">
 
-                    Código y recursos del proyecto
+                    Código en C++ y recursos utilizados en el proyecto
 
                 </p>
 
@@ -2404,8 +2391,7 @@
 
         <p class="section-description">
 
-            Proyecto desarrollado por estudiantes
-            de Undécimo Grado del Colegio Capouilliez.
+            Proyecto desarrollado por estudiantes de Undécimo Bachillerato del Colegio Capouilliez.
 
         </p>
 
@@ -2428,7 +2414,7 @@
 
                 <h3>
 
-                    Integrante 1
+                    Luis Enrique Castillo Dardón
 
                 </h3>
 
@@ -2458,7 +2444,7 @@
 
                 <h3>
 
-                    Integrante 2
+                    Mario Andrés Flores Vidal
 
                 </h3>
 
@@ -2488,7 +2474,7 @@
 
                 <h3>
 
-                    Integrante 3
+                    Diego Armando Escribá Vásquez
 
                 </h3>
 
@@ -2519,7 +2505,7 @@
 
     <p>
 
-        © 2026 NEXORA
+        © 2026 Sistema de Control de Aforo y Seguridad
 
         ·
 
